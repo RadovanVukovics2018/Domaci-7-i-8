@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Update Proizvod</title>
+	</head>
+	<body>
+		<div style="margin-left: 30%; margin-top: 100px; background-color: blue; padding: 50px; color: white; width: 20%;">
+			<form action = '/update_proizvod/{{id}}' method = 'POST' enctype="multipart/form-data">
+				<p>Naziv: <input type ='text' name ='naziv'/></p>
+				<p></p>Cena: <input type ='text' name ='cena'/></p>
+				<p></p>Kolicina: <input type ='text' name ='kolicina'/></p>
+				<p>Slika: <input type="file" name="slika"></p>
+				<input type ='submit' value ='Izmeni!'/>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Update Korisnik</title>
+	</head>
+	<body>
+		<div style="margin-left: 30%; margin-top: 100px; background-color: blue; padding: 50px; color: white; width: 20%;">
+			<form action= '/update_korisnik/{{id}}' method='POST' enctype="multipart/form-data">
+				<p>Email: <input type='text' name='email'/></p>
+				<p>Password: <input type='password' name='password1'/></p>
+				<p>Confirm password: <input type='password' name='password2'/></p>
+				<p>Pol: <select name="pol"><option value="muski">Muski</option><option value="zenski">Zenski</option></select> </p>
+				<p>Year of birth: <input type='text' name='godina_rodjenja'/></p><select name="usertype"><option value="admin">admin</option><option value="prodavac">prodavac</option></select> </p>
+				<p>Picture: <input type="file" name="profile_pic"></p>
+				<input type='submit' value='Izmeni!'/></p>
+			</form>
+		</div>
+	</body>
+</html>
